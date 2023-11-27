@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = oop_lab3
+build_property.ProjectDir = C:\Users\Максим\source\repos\oop_lab3\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Максим/source/repos/oop_lab3/AboutView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.AboutView.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutView.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutView.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/AddCommentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.AddCommentView.xaml
+build_metadata.AdditionalFiles.TargetPath = AddCommentView.xaml
+build_metadata.AdditionalFiles.RelativePath = AddCommentView.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/AddView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.AddView.xaml
+build_metadata.AdditionalFiles.TargetPath = AddView.xaml
+build_metadata.AdditionalFiles.RelativePath = AddView.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/ArticlePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.ArticlePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ArticlePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ArticlePage.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/EditView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.EditView.xaml
+build_metadata.AdditionalFiles.TargetPath = EditView.xaml
+build_metadata.AdditionalFiles.RelativePath = EditView.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Максим/source/repos/oop_lab3/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = oop_lab3.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="oop_lab3.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#2e1437">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Clicked="OpenJsonFileClicked" Text="Open" />
+            <MenuFlyoutItem Clicked="SaveClicked" Text="Save" />
+        </MenuBarItem>
+        <MenuBarItem Text="More">
+            <MenuFlyoutItem Clicked="AboutClicked" Text="About" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <ScrollView>
+                <StackLayout
+                    Padding="30"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    Spacing="25"
+                    VerticalOptions="Start">
+                    <Button
+                        x:Name="CounterBtn"
+                        BackgroundColor="#51425f"
+                        Clicked="EditClicked"
+                        HorizontalOptions="Center"
+                        Text="Edit"
+                        TextColor="#948e99" />
+                    <Button
+                        x:Name="CounterBtn2"
+                        BackgroundColor="#51425f"
+                        Clicked="DeleteClicked"
+                        HorizontalOptions="Center"
+                        Text="Delete"
+                        TextColor="#948e99" />
+                    <Button
+                        x:Name="CounterBtn4"
+                        BackgroundColor="#51425f"
+                        Clicked="AddClicked"
+                        HorizontalOptions="Center"
+                        Text="Add"
+                        TextColor="#948e99" />
+                </StackLayout>
+            </ScrollView>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <CollectionView Margin="0,50" ItemsSource="{Binding}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid
+                                    Margin="0"
+                                    HorizontalOptions="Center"
+                                    WidthRequest="1000">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="40" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="50" />
+                                        <ColumnDefinition Width="300" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="150" />
+                                        <ColumnDefinition Width="200" />
+
+                                    </Grid.ColumnDefinitions>
+                                    <Border
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        Stroke="White"
+                                        StrokeThickness="1">
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding Title}"
+                                            VerticalOptions="Center" />
+                                    </Border>
+                                    <Border
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        Stroke="White"
+                                        StrokeThickness="1">
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding Id}"
+                                            VerticalOptions="Center" />
+                                    </Border>
+                                    <Border
+                                        Grid.Row="0"
+                                        Grid.Column="3"
+                                        Stroke="White"
+                                        StrokeThickness="1">
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding Annotation}"
+                                            VerticalOptions="Center" />
+
+                                    </Border>
+                                    <Border
+                                        Grid.Row="0"
+                                        Grid.Column="4"
+                                        Stroke="White"
+                                        StrokeThickness="1">
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding Author}"
+                                            VerticalOptions="Center" />
+                                    </Border>
+                                    <Border
+                                        Grid.Row="0"
+                                        Grid.Column="5"
+                                        Stroke="White"
+                                        StrokeThickness="1">
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding FilePath}"
+                                            VerticalOptions="Center" />
+                                    </Border>
+                                    <Border
+                                        Grid.Row="0"
+                                        Grid.Column="6"
+                                        Stroke="White"
+                                        StrokeThickness="1">
+                                        <CollectionView x:Name="CommentsCollectionView" ItemsSource="{Binding Comments}">
+                                            <CollectionView.ItemsLayout>
+                                                <LinearItemsLayout Orientation="Vertical" />
+                                            </CollectionView.ItemsLayout>
+                                            <CollectionView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto" />
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="2*" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Border
+                                                            Grid.Row="0"
+                                                            Grid.Column="0"
+                                                            Stroke="White"
+                                                            StrokeThickness="1">
+                                                            <Label
+                                                                HorizontalOptions="Center"
+                                                                Text="{Binding Author}"
+                                                                VerticalOptions="Center" />
+                                                        </Border>
+                                                        <Border
+                                                            Grid.Row="0"
+                                                            Grid.Column="1"
+                                                            Stroke="White"
+                                                            StrokeThickness="1">
+                                                            <Label
+                                                                HorizontalOptions="Center"
+                                                                Text="{Binding Content}"
+                                                                VerticalOptions="Center" />
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </CollectionView.ItemTemplate>
+                                        </CollectionView>
+                                    </Border>
+                                    <RadioButton
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        GroupName="ArticleSelection"
+                                        IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                                        VerticalOptions="Center" />
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <HorizontalStackLayout
+                        Padding="0,40,0,0"
+                        HorizontalOptions="FillAndExpand"
+                        Spacing="10"
+                        VerticalOptions="Center">
+                        <Label
+                            Padding="0,10"
+                            HorizontalOptions="FillAndExpand"
+                            Text="Search:"
+                            VerticalOptions="Center" />
+                        <Entry
+                            x:Name="searchEntry"
+                            HorizontalOptions="FillAndExpand"
+                            Placeholder="Enter text here"
+                            VerticalOptions="Center" />
+                        <Picker
+                            x:Name="searchPicker"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Name</x:String>
+                                    <x:String>Author</x:String>
+                                    <x:String>Count of readers</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                        <Button
+                            x:Name="CounterBtn7"
+                            BackgroundColor="#51425f"
+                            Clicked="SearchClicked"
+                            HorizontalOptions="Center"
+                            Text="Submit"
+                            TextColor="#948e99" />
+                        <Button
+                            x:Name="CounterBtn8"
+                            BackgroundColor="#51425f"
+                            Clicked="SearchBackClicked"
+                            HorizontalOptions="Center"
+                            Text="Back"
+                            TextColor="#948e99" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

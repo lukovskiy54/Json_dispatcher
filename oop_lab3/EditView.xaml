@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="oop_lab3.EditView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="EditView"
+    BackgroundColor="#2e1437">
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout Margin="0,100" HorizontalOptions="Center">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <ScrollView HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                        <Grid
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="Start" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="Start"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <Entry
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="{Binding TitleText}"
+                                VerticalOptions="Center" />
+                        </Grid>
+                    </ScrollView>
+                    <ScrollView>
+                        <Grid
+                            HorizontalOptions="Center"
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="100" />
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="200" />
+                            </Grid.ColumnDefinitions>
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="1"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="Start"
+                                WidthRequest="2" />
+
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Id"
+                                VerticalOptions="Center" />
+                            <!--  Header  -->
+
+                            <Entry
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Id}"
+                                VerticalOptions="Center" />
+
+                            <!--  Author  -->
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Author"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="2"
+                                Grid.Column="2"
+                                HorizontalOptions="Center"
+                                Text="{Binding AnnotationText}"
+                                VerticalOptions="Center" />
+
+
+                            <!--  Annotation  -->
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Annotation"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding AuthorText}"
+                                VerticalOptions="Center" />
+
+                            <!--  File path  -->
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="File path"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="3"
+                                Grid.Column="3"
+                                HorizontalOptions="Center"
+                                Text="{Binding FilePathText}"
+                                VerticalOptions="Center" />
+
+
+
+
+                        </Grid>
+                    </ScrollView>
+                    <ScrollView HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                        <Grid
+                            HeightRequest="40"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40" />
+                            </Grid.RowDefinitions>
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="1"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="Start"
+                                WidthRequest="2" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Comments"
+                                VerticalOptions="Center" />
+                        </Grid>
+                    </ScrollView>
+
+                    <CollectionView
+                        x:Name="CommentsCollectionView"
+                        HorizontalOptions="Center"
+                        IsVisible="{Binding Comments.Any}"
+                        VerticalOptions="FillAndExpand">
+
+                        <CollectionView.EmptyView>
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="No comments available"
+                                VerticalOptions="Center" />
+                        </CollectionView.EmptyView>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid
+                                    HeightRequest="50"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="400">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <!--  Column for delete button  -->
+                                        <ColumnDefinition Width="*" />
+                                        <!--  Adjusted for author  -->
+                                        <ColumnDefinition Width="2*" />
+                                        <!--  Adjusted for content  -->
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--  Delete button  -->
+                                    <Button
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        BackgroundColor="#51425f"
+                                        BindingContext="{Binding .}"
+                                        Clicked="DeleteCommentClicked"
+                                        HorizontalOptions="Start"
+                                        Text="Delete"
+                                        TextColor="#948e99" />
+
+                                    <!--  Author Entry  -->
+                                    <Entry
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        HorizontalOptions="Center"
+                                        Text="{Binding Author}"
+                                        VerticalOptions="Center" />
+
+                                    <!--  Content Entry  -->
+                                    <Entry
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        HorizontalOptions="Center"
+                                        Text="{Binding Content}"
+                                        VerticalOptions="Center" />
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+                    <HorizontalStackLayout
+                        Padding="10"
+                        HorizontalOptions="Center"
+                        Spacing="50">
+                        <Button
+                            x:Name="CounterBtn"
+                            BackgroundColor="#51425f"
+                            Clicked="CancelClicked"
+                            HorizontalOptions="Center"
+                            Text="Cancel"
+                            TextColor="#948e99" />
+                        <Button
+                            x:Name="CounterBtn54"
+                            BackgroundColor="#51425f"
+                            Clicked="OpenChildWindowButton_Clicked"
+                            HorizontalOptions="Center"
+                            Text="Add comment"
+                            TextColor="#948e99" />
+                        <Button
+                            x:Name="CounterBtn2"
+                            BackgroundColor="#51425f"
+                            Clicked="OkClicked"
+                            HorizontalOptions="Center"
+                            Text="OK"
+                            TextColor="#948e99" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

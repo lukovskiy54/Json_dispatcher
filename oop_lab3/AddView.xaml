@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="oop_lab3.AddView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AddView"
+    BackgroundColor="#2e1437">
+    <ScrollView>
+
+        <StackLayout Padding="10" Spacing="20">
+            <Label
+                Margin="0,0,0,20"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Adding article" />
+
+            <Label Text="Title:" />
+            <Entry
+                Margin="0,0,0,10"
+                Placeholder="Enter title"
+                Text="{Binding TitleText}" />
+            <Label Text="Id:" />
+            <Entry
+                Margin="0,0,0,10"
+                Placeholder="Enter title"
+                Text="{Binding Id}" />
+
+            <Label Text="Annotation:" />
+            <Entry
+                Margin="0,0,0,10"
+                Placeholder="Enter annotation"
+                Text="{Binding AnnotationText}" />
+
+            <Label Text="Author:" />
+            <Entry
+                Margin="0,0,0,10"
+                Placeholder="Enter author"
+                Text="{Binding AuthorText}" />
+
+            <Label Text="File path:" />
+            <Entry
+                Margin="0,0,0,10"
+                Placeholder="Enter file path"
+                Text="{Binding FilePathText}" />
+
+
+            <Button
+                Margin="0,20,0,0"
+                Clicked="OpenChildWindowButton_Clicked"
+                HorizontalOptions="End"
+                Text="Add more comments"
+                VerticalOptions="End"
+                WidthRequest="100" />
+
+            <CollectionView
+                x:Name="CommentsCollectionView"
+                HorizontalOptions="Center"
+                IsVisible="{Binding Comments.Any}"
+                VerticalOptions="FillAndExpand">
+
+                <CollectionView.EmptyView>
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="No comments available"
+                        VerticalOptions="Center" />
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="200" />
+                            </Grid.ColumnDefinitions>
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="Start" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+                            <BoxView
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#948e99"
+                                HeightRequest="2"
+                                VerticalOptions="End" />
+
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="1"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="End"
+                                WidthRequest="2" />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.Column="0"
+                                BackgroundColor="#948e99"
+                                HorizontalOptions="Start"
+                                WidthRequest="2" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="{Binding Author}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Content}"
+                                VerticalOptions="Center" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button
+                Margin="0,20,0,0"
+                Clicked="OnSubmitClicked"
+                HorizontalOptions="End"
+                Text="Add"
+                VerticalOptions="End"
+                WidthRequest="100" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
