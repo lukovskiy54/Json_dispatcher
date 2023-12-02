@@ -648,3 +648,4 @@ C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0
 C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1423.51910.dll
+C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.sourcelink.json

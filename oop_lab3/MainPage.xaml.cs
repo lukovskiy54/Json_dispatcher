@@ -22,8 +22,6 @@ namespace oop_lab3
         private FileObject fileObject;
         public ObservableCollection<Article> Articles { get; set; }
 
-        
-
         private bool MainPageLocker = false;
 
 
@@ -36,22 +34,26 @@ namespace oop_lab3
 
             fileObject = FileObject.GetInstance();
 
-            this.BindingContext = fileObject.Data;
+            UpdateArticlesView();
 
         }
 
         private void SaveClicked(object sender, EventArgs e)
         {
-            fileManager.saveFile(fileObject.FilePath);
+            fileManager.SaveFile();
+        }
+        private void OpenWindow(Page view)
+        {
+            Window editWindow = new Window(view);
+            Application.Current.OpenWindow(editWindow);
         }
         private void EditClicked(object sender, EventArgs e)
         {
-            if (MainPageLocker && fileObject.Data.Count > 0)
+            UpdateArticlesView();
+            if (MainPageLocker)
             {
-                fileObject.findIndex();
-                Window editWindow = new Window(new EditView());
-                Application.Current.OpenWindow(editWindow);
-                this.BindingContext = fileObject.Data;
+                OpenWindow(new EditView());
+                UpdateArticlesView();
             }
             else
             {
@@ -62,35 +64,34 @@ namespace oop_lab3
         {
             if (MainPageLocker)
             {
-                OnPropertyChanged(nameof(fileObject.Data));
                 fileObject.deleteArticle();
+                UpdateArticlesView();
+            }
+            else
+            {
+                DisplayAlert("Error", "No elements left", "OK");
             }
         }
         private void UpdateArticlesView()
         {
-            if (fileObject.Data.Count > 0 && fileObject.index < fileObject.Data.Count)
+            this.BindingContext = fileObject.Data;
+            if (fileObject.Data.Count > 0 )
             {
                 OnPropertyChanged(nameof(fileObject.Data));
+                MainPageLocker = true;
             }
             else
             {
-                this.BindingContext = null;
-
+                MainPageLocker = false;
             }
-        }
-        private void OnArticleAdded(object sender, EventArgs e)
-        {
-            UpdateArticlesView();
         }
         private void AddClicked(object sender, EventArgs e)
         {
-            if (MainPageLocker)
+            
+            if (MainPageLocker || this.fileObject.isOpened())
             {
-
-                var addWindow = new AddView();
-                addWindow.ArticleAdded += OnArticleAdded;
-                Application.Current.OpenWindow(new Window(addWindow));
-
+                OpenWindow(new AddView());
+                UpdateArticlesView();
             }
             else
             {
@@ -99,30 +100,21 @@ namespace oop_lab3
         }
         private void AboutClicked(object sender, EventArgs e)
         {
-            var aboutView = new AboutView();
-            var aboutWindow = new Window(aboutView)
-            {
-                Width = 400,
-                Height = 200
-            };
-            Application.Current.OpenWindow(aboutWindow);
+            OpenWindow(new AboutView());
         }
         private void OpenJsonFileClicked(object sender, EventArgs e)
         {
             try
             {
-                if (fileManager.openFile())
+                if (fileManager.OpenFile("C:\\Users\\Максим\\Downloads\\example.json"))
                 {
                     DisplayAlert("Success", "File opened successfully", "OK");
-                    this.BindingContext = fileObject.Data;
+                    UpdateArticlesView();
                     MainPageLocker = true;
-                    fileObject.findIndex();
                 }
                 else
                 {
                     DisplayAlert("Error", "Error reading file. Choose another one", "OK");
-                    fileObject.FileContent = null;
-                    fileObject.FilePath = null;
                     MainPageLocker = false;
                 }
             }
@@ -136,16 +128,22 @@ namespace oop_lab3
         private void SearchBackClicked(object sender, EventArgs e)
         {
             fileObject.Data = fileObject.Articles_buffer;
-            OnPropertyChanged(nameof(fileObject.Data));
-            this.BindingContext = fileObject.Data;
+            UpdateArticlesView();
         }
+
+        private SearchCriteria GetSearchCriterias()
+        {
+            return new SearchCriteria
+            {
+                SearchText = searchEntry.Text ?? string.Empty,
+                SearchCriterion = searchPicker.SelectedItem?.ToString() ?? string.Empty
+            };
+        }
+
         private void SearchClicked(object sender, EventArgs e)
         {
-            var searchText = searchEntry.Text ?? string.Empty;
-            var searchCriterion = searchPicker.SelectedItem?.ToString() ?? string.Empty;
-            this.BindingContext = fileObject.linqSearch(searchCriterion,searchText);
-            OnPropertyChanged(nameof(fileObject.Data));
-            UpdateArticlesView();      
+            var Criterias = GetSearchCriterias();
+            this.BindingContext = fileObject.linqSearch(Criterias.SearchCriterion,Criterias.SearchText);
         }
     }
 }

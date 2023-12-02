@@ -326,7 +326,7 @@
                         <Button
                             x:Name="CounterBtn54"
                             BackgroundColor="#51425f"
-                            Clicked="OpenChildWindowButton_Clicked"
+                            Clicked="OpenChildWindowButtonClicked"
                             HorizontalOptions="Center"
                             Text="Add comment"
                             TextColor="#948e99" />

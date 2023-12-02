@@ -14,6 +14,8 @@ namespace oop_lab3
 
         public event Action OnArticleUpdated;
 
+        private ISearch searchStrategy;
+
         public ObservableCollection<Article> Data { get; set; }
 
         public ObservableCollection<Article> Articles_buffer { get; set; }
@@ -25,6 +27,8 @@ namespace oop_lab3
         private FileObject()
         {
             this.index = 0;
+
+            this.Data = new ObservableCollection<Article>();
         }
         public static FileObject GetInstance()
         {
@@ -38,33 +42,9 @@ namespace oop_lab3
 
         public ObservableCollection<Article> linqSearch(string searchCriterion, string searchText)
         {
-
-            var filteredArticles = new ObservableCollection<Article>();
             this.Articles_buffer = this.Data;
-            switch (searchCriterion)
-            {
-                case "Name":
-                    filteredArticles = new ObservableCollection<Article>(
-                        (from article_object in this.Data
-                         where (article_object?.Title?.Contains(searchText, StringComparison.OrdinalIgnoreCase) == true)
-                         select article_object).ToList());
-                    break;
-                case "Author":
-                    filteredArticles = new ObservableCollection<Article>(
-                        (from article_object in this.Data
-                         where (article_object?.Title?.Contains(searchText, StringComparison.OrdinalIgnoreCase) == true)
-                         select article_object).ToList());
-                    break;
-                case "Count of readers":
-                    if (int.TryParse(searchText, out int readersCount))
-                    {
-                        filteredArticles = new ObservableCollection<Article>(
-                            (from article_object in this.Data
-                             where (article_object?.Comments?.Count == readersCount)
-                             select article_object).ToList());
-                    }
-                    break;
-            }
+            var linqSearchStrategy = new LinqSearch();
+            var filteredArticles = linqSearchStrategy.Search(searchCriterion, searchText);
             this.Data = Articles_buffer;
             return filteredArticles;
         }
@@ -108,6 +88,11 @@ namespace oop_lab3
             {
                 this.Data.Remove(this.Data[this.index]);
             }
+        }
+
+        public bool isOpened()
+        {
+            return this.FilePath != null;
         }
 
         public void findIndex()

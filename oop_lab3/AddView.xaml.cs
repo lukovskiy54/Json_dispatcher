@@ -31,15 +31,16 @@ public partial class AddView : ContentPage
 
         CommentsCollectionView.ItemsSource = AddedComments;
     }
-    private void OpenChildWindowButton_Clicked(object sender, EventArgs e)
+
+    private void OpenCommentWindowButtonClicked(object sender, EventArgs e)
     {
         AddComment addCommentWindow = new AddComment();
-        addCommentWindow.InputValuesSubmitted += ChildPage_InputValuesSubmitted;
+        addCommentWindow.InputValuesSubmitted += ChildPageInputValuesSubmitted;
         Window thirdWindow = new Window(addCommentWindow);
         Application.Current.OpenWindow(thirdWindow);
     }
 
-    private void ChildPage_InputValuesSubmitted(object sender, string inputValues)
+    private void ChildPageInputValuesSubmitted(object sender, string inputValues)
     {
         string[] values = inputValues.Split(',');
         string author = values[0];
@@ -60,3 +61,4 @@ public partial class AddView : ContentPage
     }
 
 }
+

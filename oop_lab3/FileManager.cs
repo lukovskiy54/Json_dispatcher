@@ -1,27 +1,23 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
+
 
 namespace oop_lab3
 {
     class FileManager
     {
+        private FileReader fileReader = new FileReader();
+
+        private FileWriter fileWriter = new FileWriter();
+
+        private FileSerializer fileSerializer = new FileSerializer();
         public FileManager() {  }
 
-        public bool DeserializeFile()
+        private bool DeserializeFile(string content)
         {
             try
             {
                 var file = FileObject.GetInstance();
-
-                file.Data = JsonSerializer.Deserialize<ObservableCollection<Article>>(file.FileContent);
-
+                file.Data = fileSerializer.Deserialize(content);
                 return true;
             }
             catch (JsonException)
@@ -30,27 +26,20 @@ namespace oop_lab3
             }
         }
 
-        public void saveFile(string filePath)
-        {
-            try
-            {
-                var file = FileObject.GetInstance();
-                var json = JsonSerializer.Serialize(file.Data);
-                File.WriteAllText(file.FilePath, json);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Error saving file: {ex.Message}");
-            }
-        }
-        
-        public bool openFile()
+        public void SaveFile()
         {
             var file = FileObject.GetInstance();
-            file.FileContent = File.ReadAllText("C:\\Users\\Максим\\Downloads\\example.json");
-            file.FilePath = "C:\\Users\\Максим\\Downloads\\example.json";
-            return this.DeserializeFile();
+            var json = fileSerializer.Serialize(file.Data);
+            fileWriter.WriteFile(file.FilePath, json);
         }
 
+        public bool OpenFile(string filePath)
+        {
+            var file = FileObject.GetInstance();
+            file.FilePath = filePath;
+            file.FileContent = fileReader.ReadFile(filePath);
+
+            return DeserializeFile(file.FileContent);
+        }
     }
 }

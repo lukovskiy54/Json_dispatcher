@@ -26,7 +26,7 @@ namespace oop_lab3
                 if (_isSelected != value)
                 {
                     _isSelected = value;
-                    OnPropertyChanged(nameof(IsSelected)); // Уведомление об изменении
+                    OnPropertyChanged(nameof(IsSelected)); 
                 }
             }
         }

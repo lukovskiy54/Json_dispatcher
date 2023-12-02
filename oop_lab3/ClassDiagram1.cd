@@ -36,5 +36,12 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="oop_lab3.MainPage">
+    <Position X="9.75" Y="2.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAIIAgAEAAAAAAAAAAAgEAAAACAAgIAAgAQBAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

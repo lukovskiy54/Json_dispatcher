@@ -19,6 +19,8 @@ public partial class EditView : ContentPage
 
         FileObject file = FileObject.GetInstance();
 
+        file.findIndex();
+
         if (file.Data.Count > 0 && file.index < file.Data.Count)
         {
             this.TitleText = file.Data[file.index].Title;
@@ -35,6 +37,8 @@ public partial class EditView : ContentPage
 
             CommentsCollectionView.ItemsSource = AddedComments;
         }
+
+        
 
         BindingContext = this;
     }
@@ -64,14 +68,16 @@ public partial class EditView : ContentPage
             }
         }
     }
-    private void OpenChildWindowButton_Clicked(object sender, EventArgs e)
+
+    private void OpenChildWindowButtonClicked(object sender, EventArgs e)
     {
         AddComment addCommentWindow = new AddComment();
-        addCommentWindow.InputValuesSubmitted += ChildPage_InputValuesSubmitted;
+        addCommentWindow.InputValuesSubmitted += ChildPageInputValuesSubmitted;
         Window thirdWindow = new Window(addCommentWindow);
         Application.Current.OpenWindow(thirdWindow);
     }
-    private void ChildPage_InputValuesSubmitted(object sender, string inputValues)
+
+    private void ChildPageInputValuesSubmitted(object sender, string inputValues)
     {
         string[] values = inputValues.Split(',');
         string author = values[0];
