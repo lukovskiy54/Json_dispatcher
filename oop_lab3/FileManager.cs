@@ -1,16 +1,14 @@
 ﻿using System.Text.Json;
 
-
 namespace oop_lab3
 {
     class FileManager
     {
         private FileReader fileReader = new FileReader();
-
         private FileWriter fileWriter = new FileWriter();
-
         private FileSerializer fileSerializer = new FileSerializer();
-        public FileManager() {  }
+
+        public FileManager() { }
 
         private bool DeserializeFile(string content)
         {
@@ -38,7 +36,6 @@ namespace oop_lab3
             var file = FileObject.GetInstance();
             file.FilePath = filePath;
             file.FileContent = fileReader.ReadFile(filePath);
-
             return DeserializeFile(file.FileContent);
         }
     }

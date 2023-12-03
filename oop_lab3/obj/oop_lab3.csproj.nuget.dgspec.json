@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Максим\\source\\repos\\oop_lab3\\oop_lab3.csproj": {}
+    "C:\\Users\\Максим\\source\\repos\\oop_lab3 — копия\\oop_lab3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Максим\\source\\repos\\oop_lab3\\oop_lab3.csproj": {
+    "C:\\Users\\Максим\\source\\repos\\oop_lab3 — копия\\oop_lab3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Максим\\source\\repos\\oop_lab3\\oop_lab3.csproj",
+        "projectUniqueName": "C:\\Users\\Максим\\source\\repos\\oop_lab3 — копия\\oop_lab3.csproj",
         "projectName": "oop_lab3",
-        "projectPath": "C:\\Users\\Максим\\source\\repos\\oop_lab3\\oop_lab3.csproj",
+        "projectPath": "C:\\Users\\Максим\\source\\repos\\oop_lab3 — копия\\oop_lab3.csproj",
         "packagesPath": "C:\\Users\\Максим\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Максим\\source\\repos\\oop_lab3\\obj\\",
+        "outputPath": "C:\\Users\\Максим\\source\\repos\\oop_lab3 — копия\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

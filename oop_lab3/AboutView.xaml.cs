@@ -9,4 +9,12 @@ public partial class AboutView : ContentPage
         InitializeComponent();
  
     }
+
+    public MainPage MainPage
+    {
+        get => default;
+        set
+        {
+        }
+    }
 }

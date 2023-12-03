@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace oop_lab3
 {
-    public class Article: INotifyPropertyChanged
+    public class Article : INotifyPropertyChanged
     {
         public string Title { get; set; }
         public string Annotation { get; set; }
@@ -26,10 +26,11 @@ namespace oop_lab3
                 if (_isSelected != value)
                 {
                     _isSelected = value;
-                    OnPropertyChanged(nameof(IsSelected)); 
+                    OnPropertyChanged(nameof(IsSelected));
                 }
             }
         }
+
         public Article() { }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -37,6 +38,7 @@ namespace oop_lab3
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
         public void AddComment(Comment comment)
         {
             Comments.Add(comment);
@@ -46,7 +48,5 @@ namespace oop_lab3
         {
             Comments.Remove(comment);
         }
-
-        
     }
 }

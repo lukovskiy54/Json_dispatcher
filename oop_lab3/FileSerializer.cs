@@ -17,7 +17,12 @@ namespace oop_lab3
 
         public string Serialize(ObservableCollection<Article> articles)
         {
-            return JsonSerializer.Serialize(articles);
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+            };
+            return JsonSerializer.Serialize(articles,options);
         }
     }
 }

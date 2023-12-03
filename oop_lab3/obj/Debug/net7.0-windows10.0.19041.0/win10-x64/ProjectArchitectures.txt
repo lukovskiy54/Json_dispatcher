@@ -1,1 +1,1 @@
-C:\Users\Максим\source\repos\oop_lab3\oop_lab3.csproj;x64
+C:\Users\Максим\source\repos\oop_lab3 — копия\oop_lab3.csproj;x64

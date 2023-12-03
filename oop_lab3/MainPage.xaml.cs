@@ -2,55 +2,49 @@
 using System.Text.Json;
 using System;
 using System.IO;
-using System;
-using System.IO;
 using System.Threading.Tasks;
-using Microsoft.Maui.Controls;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-
-
 
 namespace oop_lab3
 {
     public partial class MainPage : ContentPage
     {
-
         private FileManager fileManager;
-
         private FileObject fileObject;
         public ObservableCollection<Article> Articles { get; set; }
 
-        private bool MainPageLocker = false;
-
+        private bool mainPageLocker = false;
 
         public MainPage()
         {
-
             InitializeComponent();
 
             fileManager = new FileManager();
-
             fileObject = FileObject.GetInstance();
 
             UpdateArticlesView();
-
         }
 
         private void SaveClicked(object sender, EventArgs e)
         {
-            fileManager.SaveFile();
+            if (mainPageLocker)
+            {
+                fileManager.SaveFile();
+            }
         }
+
         private void OpenWindow(Page view)
         {
             Window editWindow = new Window(view);
             Application.Current.OpenWindow(editWindow);
         }
+
         private void EditClicked(object sender, EventArgs e)
         {
             UpdateArticlesView();
-            if (MainPageLocker)
+            if (mainPageLocker)
             {
                 OpenWindow(new EditView());
                 UpdateArticlesView();
@@ -60,11 +54,12 @@ namespace oop_lab3
                 DisplayAlert("Error", "Cant edit empty file", "OK");
             }
         }
+
         private void DeleteClicked(object sender, EventArgs e)
         {
-            if (MainPageLocker)
+            if (mainPageLocker)
             {
-                fileObject.deleteArticle();
+                fileObject.DeleteArticle();
                 UpdateArticlesView();
             }
             else
@@ -72,23 +67,24 @@ namespace oop_lab3
                 DisplayAlert("Error", "No elements left", "OK");
             }
         }
+
         private void UpdateArticlesView()
         {
             this.BindingContext = fileObject.Data;
-            if (fileObject.Data.Count > 0 )
+            if (fileObject.Data.Count > 0)
             {
                 OnPropertyChanged(nameof(fileObject.Data));
-                MainPageLocker = true;
+                mainPageLocker = true;
             }
             else
             {
-                MainPageLocker = false;
+                mainPageLocker = false;
             }
         }
+
         private void AddClicked(object sender, EventArgs e)
         {
-            
-            if (MainPageLocker || this.fileObject.isOpened())
+            if (mainPageLocker || this.fileObject.IsOpened())
             {
                 OpenWindow(new AddView());
                 UpdateArticlesView();
@@ -98,10 +94,12 @@ namespace oop_lab3
                 DisplayAlert("Error", "Open file first", "OK");
             }
         }
+
         private void AboutClicked(object sender, EventArgs e)
         {
             OpenWindow(new AboutView());
         }
+
         private void OpenJsonFileClicked(object sender, EventArgs e)
         {
             try
@@ -110,24 +108,23 @@ namespace oop_lab3
                 {
                     DisplayAlert("Success", "File opened successfully", "OK");
                     UpdateArticlesView();
-                    MainPageLocker = true;
+                    mainPageLocker = true;
                 }
                 else
                 {
                     DisplayAlert("Error", "Error reading file. Choose another one", "OK");
-                    MainPageLocker = false;
+                    mainPageLocker = false;
                 }
             }
             catch (Exception ex)
             {
                 DisplayAlert("Error", "Cannot open file: " + ex.Message, "OK");
             }
-
         }
 
         private void SearchBackClicked(object sender, EventArgs e)
         {
-            fileObject.Data = fileObject.Articles_buffer;
+            fileObject.UpdateDataToBuffer();
             UpdateArticlesView();
         }
 
@@ -142,9 +139,9 @@ namespace oop_lab3
 
         private void SearchClicked(object sender, EventArgs e)
         {
-            var Criterias = GetSearchCriterias();
-            this.BindingContext = fileObject.linqSearch(Criterias.SearchCriterion,Criterias.SearchText);
+            var criterias = GetSearchCriterias();
+            var searchStrategy = new LinqSearch();
+            this.BindingContext = fileObject.Search(searchStrategy, criterias.SearchCriterion, criterias.SearchText);
         }
     }
 }
-    

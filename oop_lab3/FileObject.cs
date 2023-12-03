@@ -1,12 +1,11 @@
 ﻿using System.Collections.ObjectModel;
 using System.Diagnostics;
-
+using System.Xml.Serialization;
 
 namespace oop_lab3
 {
     internal class FileObject
     {
-
         private static FileObject _instance;
 
         public string FilePath { get; set; }
@@ -14,22 +13,16 @@ namespace oop_lab3
 
         public event Action OnArticleUpdated;
 
-        private ISearch searchStrategy;
-
         public ObservableCollection<Article> Data { get; set; }
-
-        public ObservableCollection<Article> Articles_buffer { get; set; }
+        public ObservableCollection<Article> ArticlesBuffer { get; set; }
         public int index { get; set; }
-
-
-
 
         private FileObject()
         {
             this.index = 0;
-
             this.Data = new ObservableCollection<Article>();
         }
+
         public static FileObject GetInstance()
         {
             if (_instance == null)
@@ -39,17 +32,20 @@ namespace oop_lab3
             return _instance;
         }
 
-
-        public ObservableCollection<Article> linqSearch(string searchCriterion, string searchText)
+        public ObservableCollection<Article> Search(ISearch searchStrategy, string searchCriterion, string searchText)
         {
-            this.Articles_buffer = this.Data;
-            var linqSearchStrategy = new LinqSearch();
-            var filteredArticles = linqSearchStrategy.Search(searchCriterion, searchText);
-            this.Data = Articles_buffer;
+            this.ArticlesBuffer = this.Data;
+            var filteredArticles = searchStrategy.Search(searchCriterion, searchText);
+            this.Data = ArticlesBuffer;
             return filteredArticles;
         }
 
-        public void addArticle(string TitleText, string AnnotationText, string AuthorText, string FilePathText, ObservableCollection<Comment> comments, int Id)
+        public void UpdateDataToBuffer()
+        {
+            this.Data = this.ArticlesBuffer;
+        }
+
+        public void AddArticle(string TitleText, string AnnotationText, string AuthorText, string FilePathText, ObservableCollection<Comment> comments, int Id)
         {
             Article newArticle = new Article
             {
@@ -63,26 +59,31 @@ namespace oop_lab3
             this.Data.Add(newArticle);
         }
 
-        public void editArticle(string TitleText, string AnnotationText, string AuthorText, string FilePathText, ObservableCollection<Comment> comments, int Id)
+        public void EditArticle(string TitleText, string AnnotationText, string AuthorText, string FilePathText, ObservableCollection<Comment> comments, int Id)
         {
+            Article newArticle = new Article
+            {
+                Title = TitleText,
+                Annotation = AnnotationText,
+                Author = AuthorText,
+                FilePath = FilePathText,
+                Comments = comments,
+                Id = Id
+            };
 
-            Article newarticle = new Article { Title = TitleText, Annotation = AnnotationText, Author = AuthorText, FilePath = FilePathText, Comments = comments, Id = Id };
-
-
-            this.Data[this.index] = newarticle;
-
+            this.Data[this.index] = newArticle;
             OnArticleUpdated?.Invoke();
         }
 
-        public void deleteComment(Comment comment)
+        public void DeleteComment(Comment comment)
         {
             this.Data[this.index].Comments.Remove(comment);
             OnArticleUpdated?.Invoke();
         }
 
-        public void deleteArticle()
+        public void DeleteArticle()
         {
-            this.findIndex();
+            this.FindIndex();
             Debug.WriteLine(this.index);
             if (this.index >= 0 && this.index < this.Data.Count)
             {
@@ -90,12 +91,12 @@ namespace oop_lab3
             }
         }
 
-        public bool isOpened()
+        public bool IsOpened()
         {
             return this.FilePath != null;
         }
 
-        public void findIndex()
+        public void FindIndex()
         {
             for (int i = 0; i < this.Data.Count; i++)
             {

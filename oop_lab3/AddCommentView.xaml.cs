@@ -8,6 +8,22 @@ public partial class AddComment : ContentPage
 		InitializeComponent();
 	}
 
+    public EditView EditView
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public AddView AddView
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     private void OnSubmitClicked(object sender, EventArgs e)
     {
         InputValuesSubmitted?.Invoke(this, $"{author.Text},{content.Text}");

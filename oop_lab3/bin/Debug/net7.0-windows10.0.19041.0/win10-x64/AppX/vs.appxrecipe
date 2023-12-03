@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>7ced21b5-abee-422a-ba71-c5b23ce77bf8</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Максим\source\repos\oop_lab3 — копия\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>0DE395304E60D2C69091F052CA36938C0BFDD03345167487763578D88BAB1F68</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7ced21b5-abee-422a-ba71-c5b23ce77bf8_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7ced21b5-abee-422a-ba71-c5b23ce77bf8_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,32 +26,32 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Максим\source\repos\oop_lab3 — копия\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-02T20:37:08.250</Modified>
+      <Modified>2023-12-03T13:03:31.182</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-02T20:37:07.961</Modified>
+      <Modified>2023-12-03T13:03:30.993</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.runtimeconfig.json">
       <PackagePath>oop_lab3.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-22T10:46:23.568</Modified>
+      <Modified>2023-12-02T21:56:27.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.dll">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.dll">
       <PackagePath>oop_lab3.dll</PackagePath>
-      <Modified>2023-12-02T20:37:06.582</Modified>
+      <Modified>2023-12-03T13:03:30.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>oop_lab3.exe</PackagePath>
-      <Modified>2023-12-02T20:37:06.643</Modified>
+      <Modified>2023-12-03T13:03:30.152</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.deps.json">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\oop_lab3.deps.json">
       <PackagePath>oop_lab3.deps.json</PackagePath>
-      <Modified>2023-11-26T17:00:40.079</Modified>
+      <Modified>2023-12-02T21:56:27.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Максим\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -937,239 +937,239 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2023-11-02T20:30:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-11-19T15:00:02.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:17.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:17.999</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.018</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.044</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2023-11-19T15:00:02.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2023-11-19T15:00:02.987</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
       <Modified>2023-11-19T15:00:18.181</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.442</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.491</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
       <Modified>2023-11-19T15:00:18.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
       <Modified>2023-11-19T15:00:18.254</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
       <Modified>2023-11-19T15:00:18.266</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
       <Modified>2023-11-19T15:00:18.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
       <Modified>2023-11-19T15:00:18.260</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
       <Modified>2023-11-19T15:00:18.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
       <Modified>2023-11-19T15:00:18.234</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
       <Modified>2023-11-19T15:00:18.248</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
       <Modified>2023-11-19T15:00:18.237</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
       <Modified>2023-11-19T15:00:18.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.194</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.197</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.203</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.209</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
       <Modified>2023-11-19T15:00:18.212</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
       <Modified>2023-11-19T15:00:18.215</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
       <Modified>2023-11-19T15:00:18.228</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
       <Modified>2023-11-19T15:00:18.218</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
       <Modified>2023-11-19T15:00:18.222</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.322</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.327</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.341</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.290</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.295</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.302</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.309</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.318</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.275</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.279</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.285</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.357</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.380</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
       <Modified>2023-11-19T15:00:18.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
       <Modified>2023-11-19T15:00:18.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
       <Modified>2023-11-19T15:00:18.254</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
       <Modified>2023-11-19T15:00:18.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Максим\source\repos\oop_lab3 — копия\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2023-11-19T15:00:18.322</Modified>
     </AppxPackagedFile>

@@ -29,32 +29,116 @@
                         Clicked="EditClicked"
                         HorizontalOptions="Center"
                         Text="Edit"
-                        TextColor="#948e99" />
+                        TextColor="#fff" />
                     <Button
                         x:Name="CounterBtn2"
                         BackgroundColor="#51425f"
                         Clicked="DeleteClicked"
                         HorizontalOptions="Center"
                         Text="Delete"
-                        TextColor="#948e99" />
+                        TextColor="#fff" />
                     <Button
                         x:Name="CounterBtn4"
                         BackgroundColor="#51425f"
                         Clicked="AddClicked"
                         HorizontalOptions="Center"
                         Text="Add"
-                        TextColor="#948e99" />
+                        TextColor="#fff" />
                 </StackLayout>
             </ScrollView>
             <HorizontalStackLayout HorizontalOptions="Center">
                 <VerticalStackLayout HorizontalOptions="Center">
-                    <CollectionView Margin="0,50" ItemsSource="{Binding}">
+                    <Grid
+                        Margin="0"
+                        HorizontalOptions="Center"
+                        WidthRequest="1000"
+                         
+                        >
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="300" />
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="150" />
+                            <ColumnDefinition Width="200" />
+
+                        </Grid.ColumnDefinitions>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Stroke="White"
+                            StrokeThickness="1">
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="Title"
+                                VerticalOptions="Center" />
+                        </Border>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Stroke="White"
+                            StrokeThickness="1">
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="Id"
+                                VerticalOptions="Center" />
+                        </Border>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            Stroke="White"
+                            StrokeThickness="1">
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="Annotation"
+                                VerticalOptions="Center" />
+
+                        </Border>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="4"
+                            Stroke="White"
+                            StrokeThickness="1">
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="Author"
+                                VerticalOptions="Center" />
+                        </Border>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="5"
+                            Stroke="White"
+                            StrokeThickness="1">
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="File path"
+                                VerticalOptions="Center" />
+                        </Border>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="6"
+                            Stroke="White"
+                            StrokeThickness="1">
+                            <Label
+                                HorizontalOptions="Center"
+                                Text="Comments"
+                                VerticalOptions="Center" />
+                        </Border>
+ 
+                    </Grid>
+                    <CollectionView Margin="0,0" ItemsSource="{Binding}" >
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Grid
                                     Margin="0"
                                     HorizontalOptions="Center"
-                                    WidthRequest="1000">
+                                    WidthRequest="1000"
+                                    >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
@@ -158,11 +242,13 @@
                                                                 Text="{Binding Content}"
                                                                 VerticalOptions="Center" />
                                                         </Border>
+                                                        
                                                     </Grid>
                                                 </DataTemplate>
                                             </CollectionView.ItemTemplate>
                                         </CollectionView>
                                     </Border>
+                                    
                                     <RadioButton
                                         Grid.Row="0"
                                         Grid.Column="0"
@@ -172,9 +258,11 @@
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
+                        
                     </CollectionView>
                     <HorizontalStackLayout
-                        Padding="0,40,0,0"
+                        Padding="0,0,0,0"
+                        Margin="0,50,0,0"
                         HorizontalOptions="FillAndExpand"
                         Spacing="10"
                         VerticalOptions="Center">
@@ -196,7 +284,7 @@
                                 <x:Array Type="{x:Type x:String}">
                                     <x:String>Name</x:String>
                                     <x:String>Author</x:String>
-                                    <x:String>Count of readers</x:String>
+                                    <x:String>Count of comments</x:String>
                                 </x:Array>
                             </Picker.ItemsSource>
                         </Picker>
@@ -206,14 +294,14 @@
                             Clicked="SearchClicked"
                             HorizontalOptions="Center"
                             Text="Submit"
-                            TextColor="#948e99" />
+                            TextColor="#fff" />
                         <Button
                             x:Name="CounterBtn8"
                             BackgroundColor="#51425f"
                             Clicked="SearchBackClicked"
                             HorizontalOptions="Center"
                             Text="Back"
-                            TextColor="#948e99" />
+                            TextColor="#fff" />
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
 

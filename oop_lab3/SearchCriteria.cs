@@ -10,6 +10,14 @@ namespace oop_lab3
     {
         public string SearchText { get; set; }
         public string SearchCriterion { get; set; }
+
+        public MainPage MainPage
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 
 }

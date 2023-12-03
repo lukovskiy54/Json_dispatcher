@@ -1,11 +1,12 @@
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace oop_lab3;
 
 public partial class EditView : ContentPage
 {
     public string TitleText { get; set; }
-    public int Id { get; set; }
+    public int Id { get; set; }    
     public string AnnotationText { get; set; }
     public string AuthorText { get; set; }
     public string FilePathText { get; set; }
@@ -19,7 +20,7 @@ public partial class EditView : ContentPage
 
         FileObject file = FileObject.GetInstance();
 
-        file.findIndex();
+        file.FindIndex();
 
         if (file.Data.Count > 0 && file.index < file.Data.Count)
         {
@@ -50,8 +51,22 @@ public partial class EditView : ContentPage
 
     private void OkClicked(object sender, EventArgs e)
     {
+        if (string.IsNullOrWhiteSpace(TitleText) ||
+                string.IsNullOrWhiteSpace(AnnotationText) ||
+                string.IsNullOrWhiteSpace(AuthorText) ||
+                string.IsNullOrWhiteSpace(FilePathText))
+        {
+
+            DisplayAlert("Error", "Values must be not empty", "OK");
+            return;
+        }
+        if (Id <= 0)
+        {
+            DisplayAlert("Error", "ID must be a positive integer", "OK");
+            return;
+        }
         FileObject file = FileObject.GetInstance();
-        file.editArticle(TitleText, AnnotationText, AuthorText, FilePathText, AddedComments, Id);
+        file.EditArticle(TitleText, AnnotationText, AuthorText, FilePathText, AddedComments, Id);
         Application.Current.CloseWindow(this.Window);
     }
 
@@ -64,7 +79,7 @@ public partial class EditView : ContentPage
             if (comment != null)
             {
                 FileObject file = FileObject.GetInstance();
-                file.deleteComment(comment);
+                file.DeleteComment(comment);
             }
         }
     }
