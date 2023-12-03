@@ -51,7 +51,10 @@
                     <Grid
                         Margin="0"
                         HorizontalOptions="Center"
-                        WidthRequest="1000">
+                        WidthRequest="1000"
+                         
+                        >
+                        
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
@@ -128,13 +131,14 @@
                         </Border>
  
                     </Grid>
-                    <CollectionView Margin="0,0" ItemsSource="{Binding}">
+                    <CollectionView Margin="0,0" ItemsSource="{Binding}" >
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Grid
                                     Margin="0"
                                     HorizontalOptions="Center"
-                                    WidthRequest="1000">
+                                    WidthRequest="1000"
+                                    >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
@@ -238,11 +242,13 @@
                                                                 Text="{Binding Content}"
                                                                 VerticalOptions="Center" />
                                                         </Border>
+                                                        
                                                     </Grid>
                                                 </DataTemplate>
                                             </CollectionView.ItemTemplate>
                                         </CollectionView>
                                     </Border>
+                                    
                                     <RadioButton
                                         Grid.Row="0"
                                         Grid.Column="0"
@@ -252,9 +258,11 @@
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
+                        
                     </CollectionView>
                     <HorizontalStackLayout
-                        Padding="0,40,0,0"
+                        Padding="0,0,0,0"
+                        Margin="0,50,0,0"
                         HorizontalOptions="FillAndExpand"
                         Spacing="10"
                         VerticalOptions="Center">
@@ -276,7 +284,7 @@
                                 <x:Array Type="{x:Type x:String}">
                                     <x:String>Name</x:String>
                                     <x:String>Author</x:String>
-                                    <x:String>Count of readers</x:String>
+                                    <x:String>Count of comments</x:String>
                                 </x:Array>
                             </Picker.ItemsSource>
                         </Picker>

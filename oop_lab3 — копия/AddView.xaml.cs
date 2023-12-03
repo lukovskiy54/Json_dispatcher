@@ -50,6 +50,20 @@ namespace oop_lab3
 
         private void OnSubmitClicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TitleText) ||
+                string.IsNullOrWhiteSpace(AnnotationText) ||
+                string.IsNullOrWhiteSpace(AuthorText) ||
+                string.IsNullOrWhiteSpace(FilePathText))
+            {
+                
+                DisplayAlert("Error", "Values must be not empty", "OK");
+                return; 
+            }
+            if ( Id <= 0)
+            {
+                DisplayAlert("Error", "ID must be a positive integer", "OK");
+                return;
+            }
             FileObject file = FileObject.GetInstance();
             file.AddArticle(TitleText, AnnotationText, AuthorText, FilePathText, AddedComments, Id);
             file.index = file.Data.Count - 1;

@@ -31,7 +31,7 @@ namespace oop_lab3
                         (from articleObject in file.Data
                          where String.IsNullOrEmpty(searchText)
                                ? articleObject?.Title == null
-                               : articleObject?.Title?.Equals(searchText, StringComparison.OrdinalIgnoreCase) == true
+                               : articleObject?.Title?.Contains(searchText, StringComparison.OrdinalIgnoreCase) == true
                          select articleObject).ToList());
                     break;
                 case "Author":
@@ -42,7 +42,7 @@ namespace oop_lab3
                                : articleObject?.Author?.Equals(searchText, StringComparison.OrdinalIgnoreCase) == true
                          select articleObject).ToList());
                     break;
-                case "Count of readers":
+                case "Count of comments":
                     if (int.TryParse(searchText, out int readersCount))
                     {
                         filteredArticles = new ObservableCollection<Article>(
