@@ -17,19 +17,7 @@ namespace oop_lab3
         public ObservableCollection<Comment> Comments { get; set; }
         public int Id { get; set; }
 
-        private bool _isSelected;
-        public bool IsSelected
-        {
-            get { return _isSelected; }
-            set
-            {
-                if (_isSelected != value)
-                {
-                    _isSelected = value;
-                    OnPropertyChanged(nameof(IsSelected));
-                }
-            }
-        }
+        public bool IsSelected { get; set; }
 
         public Article() { }
 
