@@ -1,0 +1,74 @@
+[
+  {
+    "Title": "Sample Article 1",
+    "Annotation": "This is the annotation for Sample Article 1",
+    "Author": "John Doe",
+    "FilePath": "/path/to/sample_article_1.txt",
+    "Comments": [
+      {
+        "Author": "Alice",
+        "Content": "Great article!"
+      },
+      {
+        "Author": "Bob",
+        "Content": "I enjoyed reading it."
+      }
+    ],
+    "Id": 1,
+    "IsSelected": false
+  },
+  {
+    "Title": "Sample Article 2",
+    "Annotation": "This is the annotation for Sample Article 2",
+    "Author": "Jane Smith",
+    "FilePath": "/path/to/sample_article_2.txt",
+    "Comments": [
+      {
+        "Author": "Charlie",
+        "Content": "Interesting topic!"
+      },
+      {
+        "Author": "David",
+        "Content": "Well written."
+      }
+    ],
+    "Id": 2,
+    "IsSelected": false
+  },
+  {
+    "Title": "Programming Basics",
+    "Annotation": "Introduction to programming concepts",
+    "Author": "Alex Johnson",
+    "FilePath": "/path/to/programming_basics.txt",
+    "Comments": [
+      {
+        "Author": "Eva",
+        "Content": "Very informative!"
+      },
+      {
+        "Author": "Frank",
+        "Content": "Clear explanations."
+      }
+    ],
+    "Id": 3,
+    "IsSelected": true
+  },
+  {
+    "Title": "Artificial Intelligence Trends",
+    "Annotation": "Exploring the latest trends in AI",
+    "Author": "Sophie Williams",
+    "FilePath": "/path/to/ai_trends.txt",
+    "Comments": [
+      {
+        "Author": "George",
+        "Content": "Fascinating insights!"
+      },
+      {
+        "Author": "Hannah",
+        "Content": "Looking forward to more."
+      }
+    ],
+    "Id": 4,
+    "IsSelected": false
+  }
+]
